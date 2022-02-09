@@ -1,0 +1,20 @@
+server:
+  port: 8383
+  
+spring:
+   datasource:
+      url: jdbc:mysql://localhost:3306/consumerdb
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      username: root
+      password: Ganeshbalaji@93
+   jpa:
+     hibernate.ddl-auto: update
+     properties:
+        hibernate:
+           dialect: org.hibernate.dialect.MySQL8Dialect
+           
+spring.cloud:
+    gcp:
+      project-id: mcygcpordermessages
+      credentials: 
+        location: file:D:\SpringToolSuiteExample\GCP-JSONKEY\mcygcpordermessages-15cbb2e1abc2.json                  
